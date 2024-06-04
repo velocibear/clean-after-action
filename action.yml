@@ -7,9 +7,8 @@ branding:
 inputs:
   keep-git:
     description: 'Keep the .git folder to speedup cloning'
-    default: false
-    type: boolean
+    default: 'false'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'index.js'
   post: 'cleanup.js'
