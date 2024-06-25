@@ -1,0 +1,14 @@
+name: 'Clean workspace post step'
+description: 'Cleans up the workspace after build finishes'
+author: 'mickem / FraBle'
+branding:
+  icon: 'delete'
+  color: 'red'
+inputs:
+  keep-git:
+    description: 'Keep the .git folder to speedup cloning'
+    default: 'false'
+runs:
+  using: 'node20'
+  main: 'index.js'
+  post: 'cleanup.js'
