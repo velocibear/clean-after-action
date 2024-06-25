@@ -1,6 +1,6 @@
 name: 'Clean workspace post step'
 description: 'Cleans up the workspace after build finishes'
-author: 'mickem / FraBle'
+author: 'mickem / FraBle / Velocibear'
 branding:
   icon: 'delete'
   color: 'red'
@@ -11,4 +11,4 @@ inputs:
 runs:
   using: 'node20'
   main: 'index.js'
-  post: 'cleanup.js'
+  post: 'dist/cleanup.js'
